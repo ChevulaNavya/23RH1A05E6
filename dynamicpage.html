@@ -11,21 +11,17 @@
       border-radius: 5px;
       cursor: pointer;
     }
-
     #button:hover {
       background-color: #3e8e41;
     }
-
     form {
       text-align: center;
       margin-top: 50px;
     }
-
     label, input {
       display: block;
       margin: 10px auto;
     }
-
     input {
       padding: 8px;
       width: 200px;
@@ -33,27 +29,19 @@
   </style>
 </head>
 <body>
-
   <form action="#">
     <label for="username">Username</label>
     <input type="text" id="username" name="username">
 
     <label for="password">Password</label>
     <input type="password" id="password" name="password">
-
     <button id="button" type="button" onclick="changeColor()">Click me!</button>
   </form>
-
   <script>
     function changeColor() {
-      // Change button color
       document.getElementById("button").style.background = "#008CBA";
-
-      // Get values
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
-
-      // Show alert
       alert("Thank you for applying!\nUsername: " + username + "\nPassword: " + password);
     }
   </script>
